@@ -8,7 +8,9 @@
 
 -   O segundo passo foi instalar o framework Laravel.
 
-# Regras de negócio
+-   Para rodar a aplicação é preciso ter o php 8 instalar e o composer para instalar as dependencias usando "composer install", o banco de dados e a .env já estáo configurados
+
+**Regras de negócio**
 
 1. É possivel registrar um email e um comentário que será enviado por POST para uma rota que valida e registra o comentário no banco de dados, em cada noticia é possível recuperar os comentários de acordo com a notícia, paginados de 20 em 20;
 
@@ -19,11 +21,11 @@
 4. A aplicação é perfeitamente escalável, podendo garantir grande volume de requisições em um curto espaço de tempo;
 
 5. A página Home da aplicação lista as noticias mostrando a quantidades de comentários por notícia; cada notícia é clicável,
-facilitando a navegação na página.
+   facilitando a navegação na página.
 
 6. Foi utilizado um template [bootstrap](https://getbootstrap.com/docs/5.2/examples/) para facilitar o desenvolvimento, porem,
-a aplicação poderia ter sido desenvolvida sem a utilização de termplates, para uma maior controle de sua personalização.
+   a aplicação poderia ter sido desenvolvida sem a utilização de termplates, para uma maior controle de sua personalização.
 
-# Observações
+# Logica
 
--   A aplicação poderia
+-   Para rodar o programa basta rodar "npm install" e executar o arquivo load.balance.js

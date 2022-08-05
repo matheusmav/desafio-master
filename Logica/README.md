@@ -9,33 +9,42 @@ Os servidores são máquinas virtuais que se auto criam para acomodar novos usu�
 O desafio é fazer um programa em que recebe usuários e os aloca nos servidores tentando manter o menor custo possível.
 
 ---
+
 ### Input
-Um ***arquivo*** onde:
-  - a primeira linha possui o valor de `ttask`;
-  - a segunda linha possui o valor de `umax`;
-  - as demais linhas contém o número de novos usuários para cada tick .
+
+Um **_arquivo_** onde:
+
+-   a primeira linha possui o valor de `ttask`;
+-   a segunda linha possui o valor de `umax`;
+-   as demais linhas contém o número de novos usuários para cada tick .
 
 ### Output
-Um ***arquivo*** onde cada linha contém uma lista de servidores disponíveis no final de cada `tick`, 
+
+Um **_arquivo_** onde cada linha contém uma lista de servidores disponíveis no final de cada `tick`,
 representado pelo número de usuários em cada servidor separados por vírgula e, ao final, o custo total por utilização dos servidores
 
 ### Limites
-- 1 ≤ ttask ≤ 10 
-- 1 ≤ umax ≤ 10
+
+-   1 ≤ ttask ≤ 10
+-   1 ≤ umax ≤ 10
 
 ### Exemplo
+
 input.txt
+
 ```
-4 
-2 
-1 
-3 
-0 
-1 
-0 
+4
+2
+1
+3
+0
+1
+0
 1
 ```
+
 output.txt
+
 ```
 1
 2,2
@@ -45,12 +54,14 @@ output.txt
 2
 2 1 1 0 15
 ```
+
 ### Detalhamento do exemplo
-- ttask = 4 (valor da primeira linha do input.txt)
-- umax = 2 (valor da segundo linha do input.txt)
+
+-   ttask = 4 (valor da primeira linha do input.txt)
+-   umax = 2 (valor da segundo linha do input.txt)
 
 | Tick | Input | Output | Explicação                                                                                                 |
-|------|-------|--------|------------------------------------------------------------------------------------------------------------|
+| ---- | ----- | ------ | ---------------------------------------------------------------------------------------------------------- |
 | 1    | 1     | 1      | 1 servidor para 1 usuário. (1 servidor criado)                                                             |
 | 2    | 3     | 2,2    | 2 servidores para 4 usuários. (1 servidor criado)                                                          |
 | 3    | 0     | 2,2    | 2 servidores para 4 usuários. (nenhum servidor criado ou removido)                                         |
@@ -64,8 +75,9 @@ output.txt
 |      |       | 15     | Custo Total: R$1 x 5 ticks (primeira VM) + R$1 x 4 ticks (segunda VM) + R$1 x 6 ticks (terceira VM) = R$15 |
 
 ### Critérios de avaliação
-- Funcionamento
-- Testes de unidade
-- Cobertura de testes
-- Complexidade de código
-- Padronização de código
+
+-   Funcionamento
+-   Testes de unidade
+-   Cobertura de testes
+-   Complexidade de código
+-   Padronização de código

@@ -18,8 +18,12 @@
 
 4. A aplicação é perfeitamente escalável, podendo garantir grande volume de requisições em um curto espaço de tempo;
 
-5. A página Home da aplicação lista as noticias mostrando a quantidades de comentários por notícia.
+5. A página Home da aplicação lista as noticias mostrando a quantidades de comentários por notícia; cada notícia é clicável,
+facilitando a navegação na página.
 
-6. Foi utilizado um template [bootstrap](https://getbootstrap.com/docs/5.2/examples/)
+6. Foi utilizado um template [bootstrap](https://getbootstrap.com/docs/5.2/examples/) para facilitar o desenvolvimento, porem,
+a aplicação poderia ter sido desenvolvida sem a utilização de termplates, para uma maior controle de sua personalização.
 
 # Observações
+
+-   A aplicação poderia

@@ -119,8 +119,6 @@
     </div>
   </div>
 
-
-
   <div class="row">
     <div class="col-md-12">
 
@@ -170,17 +168,13 @@
         </div>
         @endforeach
 
-
       </article>
 
       <nav class="blog-pagination mt-5 mb-5" aria-label="Pagination">
         <a class="btn btn-outline-primary rounded-pill" href={{$comments->toArray()['prev_page_url']."#comentarios"}}>Anterior</a>
         <a class="btn btn-outline-primary rounded-pill" href={{$comments->toArray()['next_page_url']."#comentarios"}}>Próxima</a>
       </nav>
-
     </div>
-
-
     </div>
 
 </main>

@@ -10,10 +10,6 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/blog/">
 
-
-
-
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -119,8 +115,6 @@
     </div>
   </div>
 
-
-
   <div class="row">
     <div class="col-md-12">
 
@@ -142,8 +136,6 @@
     <a href="#">Back to top</a>
   </p>
 </footer>
-
-
 
   </body>
 </html>

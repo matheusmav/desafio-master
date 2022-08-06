@@ -58,9 +58,6 @@ function run() {
             ticks += vms.length;
         }
 
-        console.log(vms, element, ticks);
-        console.log("=========");
-
         //Atualiza tiks (Função com bug)
         vms.map((vm) => {
             vm.map((ttask) => {
@@ -73,12 +70,6 @@ function run() {
                 }
             });
         });
-
-        // console.log(
-        //     index,
-        //     element,
-        //     vms.map((vm) => vm.length)
-        // );
     }
 
     console.log("Total de custo R$" + ticks);

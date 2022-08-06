@@ -53,13 +53,20 @@ function run() {
         const ttaskUsers = makeTasks(element);
         alocarTtask(ttaskUsers);
 
+        //Verifica a quantidades de ticks que serão cobrados
+        if (vms.length >= 1) {
+            ticks += vms.length;
+        }
+
+        console.log(vms, element, ticks);
+        console.log("=========");
+
         //Atualiza tiks (Função com bug)
         vms.map((vm) => {
             vm.map((ttask) => {
-                if (ttask.ticksRestantes > 0) {
-                    ttask.ticksRestantes--;
-                } else {
-                    vm.splice(vm.indexOf(ttask), 1);
+                ttask.ticksRestantes--;
+                if (ttask.ticksRestantes === 0) {
+                    vm.splice(0, 1);
                 }
                 if (vm.length <= 0) {
                     vms.splice(vms.indexOf(vm), 1);
@@ -67,16 +74,11 @@ function run() {
             });
         });
 
-        console.log(
-            index,
-            element,
-            vms.map((vm) => vm.length)
-        );
-
-        //Verifica a quantidades de ticks que serão cobrados
-        if (vms.length >= 1) {
-            ticks += vms.length;
-        }
+        // console.log(
+        //     index,
+        //     element,
+        //     vms.map((vm) => vm.length)
+        // );
     }
 
     console.log("Total de custo R$" + ticks);

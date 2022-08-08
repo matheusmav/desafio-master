@@ -33,8 +33,12 @@
    facilitando a navegação na página.
 
 6. Foi utilizado um template [bootstrap](https://getbootstrap.com/docs/5.2/examples/) para facilitar o desenvolvimento, porem,
-   a aplicação poderia ter sido desenvolvida sem a utilização de termplates, para uma maior controle de sua personalização.
+   a aplicação poderia ter sido desenvolvida sem a utilização de templates, para uma maior controle de sua personalização.
 
 # Logica
 
--   Para rodar o programa basta rodar "npm install" e executar o arquivo load.balance.js
+-   Para rodar o programa basta rodar "npm install" e executar o arquivo load.balance.js dentro da pasta
+    /Logica/Load Balance
+
+$ npm install
+$ node load.balance.js

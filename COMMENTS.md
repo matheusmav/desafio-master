@@ -8,7 +8,16 @@
 
 -   O segundo passo foi instalar o framework Laravel.
 
--   Para rodar a aplicação é preciso ter o php 8 instalar e o composer para instalar as dependencias usando "composer install", o banco de dados e a .env já estáo configurados
+-   Para rodar a aplicação é preciso ter o php 8, e o composer para instalar as dependencias, alem das extensoes 'sqlite3' e 'pdo_sqlite' ativadas no arquivo php.ini; o banco de dados e a .env já estáo configurados.
+
+-   Instalação da aplicação:
+    Dentro de Sistema/aplicacao-de-comentarios rode
+    $ composer install
+
+    Para iniciar a aplicação:
+    $ php artisan serve
+
+    A aplicação irá iniciar no endereço http://localhost:8000/
 
 **Regras de negócio**
 

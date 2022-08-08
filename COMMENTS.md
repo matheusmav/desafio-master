@@ -40,5 +40,5 @@
 -   Para rodar o programa basta rodar "npm install" e executar o arquivo load.balance.js dentro da pasta
     /Logica/Load Balance
 
-$ npm install
-$ node load.balance.js
+    $ npm install
+    $ node load.balance.js
